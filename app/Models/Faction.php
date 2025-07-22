@@ -2,13 +2,12 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Builder;
 
 class Faction extends Model
 {
-
     protected $fillable = [
         'name',
         'slug',
@@ -45,10 +44,10 @@ class Faction extends Model
     /**
      * Relationship: A faction has many warbands
      */
-//    public function warbands(): HasMany
-//    {
-//        return $this->hasMany(Warband::class);
-//    }
+    //    public function warbands(): HasMany
+    //    {
+    //        return $this->hasMany(Warband::class);
+    //    }
 
     /**
      * Scope: Get only active factions
@@ -115,7 +114,7 @@ class Faction extends Model
     public function getColorStyleAttribute(): string
     {
         return collect($this->color_variables)
-            ->map(fn($value, $key) => "{$key}: {$value}")
+            ->map(fn ($value, $key) => "{$key}: {$value}")
             ->implode('; ');
     }
 
@@ -134,5 +133,4 @@ class Faction extends Model
     {
         return $this->baseUnits()->where('is_active', true);
     }
-
 }

@@ -15,7 +15,7 @@ class DevUsersSeeder extends Seeder
     {
         $adminEmail = 'admin@example.com';
 
-        if (!User::where('email', $adminEmail)->exists()) {
+        if (! User::where('email', $adminEmail)->exists()) {
             User::create([
                 'name' => 'Admin User',
                 'email' => $adminEmail,
@@ -30,7 +30,7 @@ class DevUsersSeeder extends Seeder
 
         $testEmail = 'test@example.com';
 
-        if (!User::where('email', $testEmail)->exists()) {
+        if (! User::where('email', $testEmail)->exists()) {
             User::factory()->create([
                 'name' => 'Test User',
                 'email' => $testEmail,

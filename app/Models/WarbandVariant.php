@@ -2,14 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Builder;
 
 class WarbandVariant extends Model
 {
-
     protected $fillable = [
         'faction_id',
         'name',
@@ -51,10 +50,10 @@ class WarbandVariant extends Model
     /**
      * Relationship: A warband variant has many warbands
      */
-//    public function warbands(): HasMany
-//    {
-//        return $this->hasMany(Warband::class);
-//    }
+    //    public function warbands(): HasMany
+    //    {
+    //        return $this->hasMany(Warband::class);
+    //    }
 
     /**
      * Scope: Get only active variants
@@ -189,7 +188,7 @@ class WarbandVariant extends Model
         $special = [];
 
         foreach ($resources as $key => $value) {
-            if (!in_array($key, ['ducats', 'glory_points'])) {
+            if (! in_array($key, ['ducats', 'glory_points'])) {
                 $special[$key] = $value;
             }
         }

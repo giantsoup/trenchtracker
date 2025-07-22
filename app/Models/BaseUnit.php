@@ -5,12 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class BaseUnit extends Model
 {
-    use SoftDeletes;
-
     /**
      * The attributes that are mass assignable.
      *
@@ -93,10 +90,10 @@ class BaseUnit extends Model
     /**
      * Get the player units created from this base unit.
      */
-//    public function units(): HasMany
-//    {
-//        return $this->hasMany(Unit::class);
-//    }
+    //    public function units(): HasMany
+    //    {
+    //        return $this->hasMany(Unit::class);
+    //    }
 
     /**
      * Scope a query to only include active units.

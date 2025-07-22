@@ -2,8 +2,12 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-
+use Database\Seeders\Factions\CourtOfSevenHeadedSerpentSeeder;
+use Database\Seeders\Factions\CultOfTheBlackGrailSeeder;
+use Database\Seeders\Factions\HereticLegionsSeeder;
+use Database\Seeders\Factions\IronSultanateSeeder;
+use Database\Seeders\Factions\PrincipalityOfNewAntiochSeeder;
+use Database\Seeders\Factions\TrenchPilgrimsSeeder;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,11 +17,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // run Faction and Warband Faction Seeders
+        // Run individual faction seeders
         $this->call([
-            FactionSeeder::class,
-            WarbandVariantSeeder::class,
-            BaseUnitsSeeder::class,
+            TrenchPilgrimsSeeder::class,
+            HereticLegionsSeeder::class,
+            CultOfTheBlackGrailSeeder::class,
+            CourtOfSevenHeadedSerpentSeeder::class,
+            IronSultanateSeeder::class,
+            PrincipalityOfNewAntiochSeeder::class,
         ]);
     }
 }
