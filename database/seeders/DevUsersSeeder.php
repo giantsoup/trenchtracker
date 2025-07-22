@@ -6,14 +6,13 @@ use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
-class AdminUserSeeder extends Seeder
+class DevUsersSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        // Check if admin user already exists to prevent duplicates
         $adminEmail = 'admin@example.com';
 
         if (!User::where('email', $adminEmail)->exists()) {
@@ -27,6 +26,21 @@ class AdminUserSeeder extends Seeder
             $this->command->info('Admin user created successfully.');
         } else {
             $this->command->info('Admin user already exists.');
+        }
+
+        $testEmail = 'test@example.com';
+
+        if (!User::where('email', $testEmail)->exists()) {
+            User::factory()->create([
+                'name' => 'Test User',
+                'email' => $testEmail,
+                'password' => Hash::make('password'),
+                'email_verified_at' => now(),
+            ]);
+
+            $this->command->info('Test user created successfully.');
+        } else {
+            $this->command->info('Test user already exists.');
         }
     }
 }

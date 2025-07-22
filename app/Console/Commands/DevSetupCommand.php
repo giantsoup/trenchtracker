@@ -2,7 +2,7 @@
 
 namespace App\Console\Commands;
 
-use Database\Seeders\AdminUserSeeder;
+use Database\Seeders\DevUsersSeeder;
 use Illuminate\Console\Command;
 
 class DevSetupCommand extends Command
@@ -24,12 +24,12 @@ class DevSetupCommand extends Command
     /**
      * Execute the console command.
      */
-    public function handle()
+    public function handle(): void
     {
         $this->info('Setting up development environment...');
 
         // Create admin user
-        $this->call('db:seed', ['--class' => AdminUserSeeder::class]);
+        $this->call('db:seed', ['--class' => DevUsersSeeder::class]);
 
         $this->info('Development environment setup completed!');
     }
