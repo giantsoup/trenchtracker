@@ -1,6 +1,5 @@
-The Court of the
-Seven-Headed Serpent
-utting from eternally belching plumes of
+The Court of the Seven-Headed Serpent
+Jutting from eternally belching plumes of
 stinking, corrosive smoke is the Iron City
 of Dis; and atop its shrieking, black keep can
 be found the Infernal War Council. There sits
@@ -75,7 +74,6 @@ living human slave soldiers of the Court known as the
 wretched. These unfortunate souls possess not a drop of
 demon blood. They act as disposable shock troops or are
 used as subjects of torture to power the Goetic magic of
-J
 97
 TRENCH CRUSADE PLAYTEST RULES
 the sorcerers and other users of the dark arts. Captured
@@ -202,23 +200,28 @@ Rules: If a model equipped with an arquebus has two hands free, it can use it in
 club.
 Ophidian Rifle
 This wheel-lock hunting rifle is produced in the forges of the demon Sabnock, the Great Marquis of War. Made of both
-infernal and earthly metals and materials, it exists simultaneously in the twisted dimension of Hell as well as on Earth.
-A thing that should not be, the shots of this firearm pervert the laws of God, so taking cover from its bullets and firing over
+infernal and earthly metals and materials, it exists simultaneously in the twisted dimension of Hell as well as on
+Earth.
+A thing that should not be, the shots of this firearm pervert the laws of God, so taking cover from its bullets and
+firing over
 great distances aid the user of this hell-made rifle instead of hindering the aim.
 Name Type Range Modifiers Keywords
 Ophidian Rifle 2-handed 30” HEAVY
 Rules: This weapon ignores the penalties for Cover and Long Range, and rolls attacks against models at Long Range
 or in Cover with +1 DICE. These bonuses stack for a possible total of +2 DICE.
 Serpent Assault Gun
-This terrifying and enormous hand cannon contains a portal to the foetid swamps and bogs of the Fifth Circle of Hell. Each
+This terrifying and enormous hand cannon contains a portal to the foetid swamps and bogs of the Fifth Circle of Hell.
+Each
 bullet it fires is enveloped with an awful gas.
 Name Type Range Modifiers Keywords
 Serpent Gun 2-handed 36” GAS, HEAVY, ASSAULT
 Rules: When this model takes this ranged attack ACTION, it can make up to two attacks with this weapon. These
 attacks can target separate models, but the targets must be within 6” of each other.
 Bow of Lethe
-This bow is grown by the Hunters of the Left-Hand Path out of their own flesh. It can be tipped with a deadly poison made
-from the blood of the nameless beasts that the Hunters stalk in the wastelands of Hell, or it can shoot one of the iron bolts of
+This bow is grown by the Hunters of the Left-Hand Path out of their own flesh. It can be tipped with a deadly poison
+made
+from the blood of the nameless beasts that the Hunters stalk in the wastelands of Hell, or it can shoot one of the iron
+bolts of
 Pandemonium that weigh nine tonnes on Earth.
 Name Type Range Modifiers Keywords
 Bow of Lethe 1-handed 24” +2D to Injuries/ ASSAULT
@@ -229,9 +232,12 @@ Rules: Before rolling an injury for this weapon, choose one of the following eff
 100
 TRENCH CRUSADE PLAYTEST RULES
 Torture Instrument
-Great scourges made from living spines, red-hot rods, man-catchers and all the tools of torment fashioned by the sadistic
-smiths of Dis are widely used by Court warbands. Their main function is not to kill, but to cause as much agonising pain as
-possible. Forged in hellfire and quenched in the black waters of river Styx. The agony their wounds bring lasts for days.
+Great scourges made from living spines, red-hot rods, man-catchers and all the tools of torment fashioned by the
+sadistic
+smiths of Dis are widely used by Court warbands. Their main function is not to kill, but to cause as much agonising pain
+as
+possible. Forged in hellfire and quenched in the black waters of river Styx. The agony their wounds bring lasts for
+days.
 Name Type Range Modifiers Keywords
 Torture Instrument 2-handed Melee
 Rules: This weapon rolls D6 on the Injury Chart, or 2D6 on a BLOODBATH. This weapon causes an additional
@@ -244,7 +250,8 @@ Hellblade 2-handed Melee +1D to Injuries FIRE
 Rules: This weapon rolls for injuries with +1 DICE. Because this weapon has the Keyword FIRE, it inflicts an
 additional BLOOD MARKER on a hit.
 Head Taker
-Said to contain a tiny sliver of the stone that Cain used to murder Abel, this weapon allows its wielder to clearly see each
+Said to contain a tiny sliver of the stone that Cain used to murder Abel, this weapon allows its wielder to clearly see
+each
 spot in the body of their enemy that would bring it instant and agonising death. This makes it a superb ambush weapon
 much favoured by the Hunters of the Left-Hand Path.
 Name Type Range Modifiers Keywords
@@ -259,20 +266,24 @@ Rules: This enormous evil sword rolls 3D6 on the Injury Chart, adding the result
 Crown of Hellfire
 This burning crown is held aloft by the pain-seared hands of an invisible damned soul, whose weeping cries can still be
 heard. It is a reward that an elite member of the Court can earn through some extraordinary act in the service of the
-Serpent Head they are pledged to. Of the slave soldiers of the Court, only the Pit Locusts are allowed to wear this symbol of
+Serpent Head they are pledged to. Of the slave soldiers of the Court, only the Pit Locusts are allowed to wear this
+symbol of
 prestige due the fundamental role they played at the start of the Great War.
 Rules: When this model ends its Activation, each enemy model in melee combat with it suffers a BLOOD MARKER.
 Any effect or ability that negates BLOOD MARKERS from the Keyword FIRE negates this BLOOD MARKER.
 Infernal Iron Armour
 This armour is forged simultaneously in Hell and on Earth, so that no weapon, whether infernal or man-made, can
-overcome its protection. It serves both as protection and a torturous prison for the Hell Knights that are forced to wear it.
+overcome its protection. It serves both as protection and a torturous prison for the Hell Knights that are forced to
+wear it.
 Rules: Injuries against this model are rolled with a flat -2 penalty. This penalty applies against injuries that ignore
 armour.
 101
 TRENCH CRUSADE PLAYTEST RULES
 Restraining Muzzle
-Yoke Fiends are unruly beasts, and almost impossible to control when they smell mortal blood. Court nobles use these cruel,
-barbed muzzles to bring them to heel. Each is attuned to the will of the noble in the charge, who can constrict them until
+Yoke Fiends are unruly beasts, and almost impossible to control when they smell mortal blood. Court nobles use these
+cruel,
+barbed muzzles to bring them to heel. Each is attuned to the will of the noble in the charge, who can constrict them
+until
 the pain becomes so unbearable that even the most bestial Yoke Fiend is made to obey.
 Rules: Any Yoke Fiend equipped with a Restraining Muzzle is not affected by the Hateful rule and therefore does not
 have to charge certain enemies within Charge range. With this device in place, the unruly Yoke Fiends can be trained
@@ -305,7 +316,8 @@ Burning Inferno 15 ducats
 As a Ranged Attack ACTION with GOETIC (1-3) spell the Sorcerer opens a portal to the Lake of Fire and draws
 forth a great screaming ball of infernal lava mixed with damned souls. Select a 1x1mm point within 36” that the
 Sorcerer can see. Next, make a ranged attack ACTION: this attack suffers penalties for Long Range but not for Cover.
-If the roll fails (i.e. you roll 6 or less), the fireball lands 1” away from its intended location, multiplied by the number
+If the roll fails (i.e. you roll 6 or less), the fireball lands 1” away from its intended location, multiplied by the
+number
 representing the degree of failure (for example, if you rolled 5, the fireball lands 2” away, as 7-5=2). The direction
 is decided by your opponent. The Burning Inferno has the Keyword BLAST X”, where X is the amount of BLOOD
 MARKERS spent. Additionally, if the Burning Inferno lands directly on top of a model, it ignores that model’s armour.
@@ -397,7 +409,8 @@ No more than one BLOOD MARKER at a time can be used to negatively affect an ACTI
 model takes.
 Sloth Warband only, ELITE only
 Charm of Acedia 10 ducats
-The great aversion to effort possessed by this infernal warrior seeps to nearby creatures or to the very Creation itself, forcing
+The great aversion to effort possessed by this infernal warrior seeps to nearby creatures or to the very Creation
+itself, forcing
 them to bend to its will and thus avoiding the need for the demonic creature to struggle to achieve its aims.
 This GOETIC (1) spell can be cast right before the model casting it takes an ACTION involving any model, friend
 or foe (including the model itself and thus covering Dashing, Climbing, Jumping etc). The target ceases any potential
@@ -410,7 +423,8 @@ of this model is considered both Dangerous Terrain and Difficult Terrain for ene
 ELITE only, Sloth Warband only, LIMIT: 1
 Gluttony
 Belly of the Beast 5 ducats
-This creature is known to feast on vast mounds of flesh before it leaves Hell. If it is cut in battle, its opponents suffer
+This creature is known to feast on vast mounds of flesh before it leaves Hell. If it is cut in battle, its opponents
+suffer
 agonizing burns as the acidic contents of their gut gushes all over them.
 Whenever an enemy model inflicts one or more BLOOD MARKERS on this model with a melee attack, that model
 suffers one BLOOD MARKER.
@@ -437,7 +451,8 @@ So great is the devotion of this servant of greed that their entire body takes o
 This model gains the Keyword GOLEM. If the model has the Keyword TOUGH it loses it.
 ELITE only, Greed Warband only, LIMIT: 1
 Black Heart 15 ducats
-Greed has corrupted the heart of this fallen creature to such an extent that within their chest is a gaping hole. When it
+Greed has corrupted the heart of this fallen creature to such an extent that within their chest is a gaping hole. When
+it
 desires something enough, it bleeds black tar that empowers this servant of avarice.
 This GOETIC (1) power allows the model to add +1 DICE to any ACTION it takes. Can be used multiple times
 per activation, but only once per ACTION.
@@ -687,7 +702,8 @@ Climbing, Jumping or crossing Dangerous Terrain.
 Saint) roll melee attacks and to Dash with +1 DICE.
 ; Aura of Lust: Enemy models within 6” of the Desecrated Saint (unless
 they have the Keyword BLACK GRAIL) gain no benefit from any armour
-they wear, as they are naked before the Serpent Head of Lust in the Helldimension that the Saint projects all around it. This includes additional
+they wear, as they are naked before the Serpent Head of Lust in the Helldimension that the Saint projects all around it.
+This includes additional
 effects, such as Machine Armour’s ability to reduce Down results to Minor
 Hit results, but not penalties or neutral effects (such as the Charging penalty
 or the base size adjustment). Note: Holy Icon Shields and Armour, Infernal
