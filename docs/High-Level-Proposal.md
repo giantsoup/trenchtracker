@@ -16,6 +16,7 @@ Here are the core database tables I would propose:
 
 *   **`users`**: Standard table for user authentication and ownership of warbands.
 *   **`factions`**: A simple table to hold the different factions (e.g., The Church, Heretic Legions). This allows for easy expansion as new factions are released.
+*   **`warband_variants`**: Stores faction variants.
 *   **`warbands`**: The central point for a user. It would belong to a `user` and a `faction` and have a name, notes, and perhaps a calculated "Warband Rating" based on the units inside it.
 *   **`base_units`**: This table will act as a "template" for every type of soldier available in the game. It will store the default stats (Movement, Melee, etc.), keywords, and starting equipment options for a "Trench Pilgrim" or a "Demonic Stalker," for example. This makes adding new unit types in the future a simple database entry.
 *   **`units`**: This table will represent a player's *specific* soldier. When a user adds a unit to their warband, we'll create an entry here, copying the base stats from the `base_units` table. This record will have its own `name`, `current_experience`, `rank`, `injuries`, and any promotions. It will belong to a `warband`.

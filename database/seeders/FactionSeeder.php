@@ -1,0 +1,90 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
+
+class FactionSeeder extends Seeder
+{
+    public function run(): void
+    {
+        $factions = [
+            [
+                'name' => 'The Trench Pilgrims',
+                'slug' => 'trench-pilgrims',
+                'description' => 'The faithful warriors of Heaven, fighting to reclaim the world from the forces of Hell.',
+                'lore' => 'These devoted soldiers march into the trenches with prayer on their lips and faith in their hearts. They believe that through sacrifice and devotion, they can turn the tide of this endless war.',
+                'primary_color' => '#D4AF37', // Gold
+                'secondary_color' => '#FFFFFF', // White
+                'icon' => 'cross',
+                'is_active' => true,
+                'sort_order' => 1,
+            ],
+            [
+                'name' => 'Heretic Legions',
+                'slug' => 'heretic-legions',
+                'description' => 'Corrupted souls who have embraced the darkness and fight for the infernal powers.',
+                'lore' => 'Once faithful servants of the divine, these warriors have been twisted by exposure to Hell\'s influence. They now serve dark masters with fanatical devotion.',
+                'primary_color' => '#8B0000', // Dark Red
+                'secondary_color' => '#000000', // Black
+                'icon' => 'pentagram',
+                'is_active' => true,
+                'sort_order' => 2,
+            ],
+            [
+                'name' => 'The Cult of the Black Grail',
+                'slug' => 'cult-of-the-black-grail',
+                'description' => 'Dark devotees who seek forbidden knowledge through corrupted sacraments and unholy rituals.',
+                'lore' => 'These heretics have perverted the sacred chalice into an instrument of damnation. They consume cursed wine and perform blasphemous rites, believing that through corruption they will achieve transcendence. Their grail overflows with the blood of the innocent and the tears of the damned.',
+                'primary_color' => '#4A0E2B', // Dark Wine
+                'secondary_color' => '#C0392B', // Dark Red
+                'icon' => 'wine-glass',
+                'is_active' => true,
+                'sort_order' => 3,
+            ],
+            [
+                'name' => 'The Court of the Seven-Headed Serpent',
+                'slug' => 'court-of-seven-headed-serpent',
+                'description' => 'Aristocratic heretics who serve the ancient serpentine powers with twisted nobility.',
+                'lore' => 'Once noble houses of great renown, these aristocrats have fallen to the whispers of the Seven-Headed Serpent. They maintain their courtly ways even as they serve darkness, believing that through refined evil and cultured corruption, they embody the perfect synthesis of civilization and damnation.',
+                'primary_color' => '#2C3E50', // Dark Blue-Grey
+                'secondary_color' => '#F39C12', // Gold
+                'icon' => 'crown',
+                'is_active' => true,
+                'sort_order' => 4,
+            ],
+            [
+                'name' => 'Iron Sultanate',
+                'slug' => 'iron-sultanate',
+                'description' => 'Technologically advanced forces wielding steam-powered war machines.',
+                'lore' => 'Masters of industry and innovation, the Iron Sultanate has adapted to the endless war with mechanical precision and technological superiority.',
+                'primary_color' => '#4682B4', // Steel Blue
+                'secondary_color' => '#FFD700', // Gold
+                'icon' => 'gear',
+                'is_active' => true,
+                'sort_order' => 5,
+            ],
+            [
+                'name' => 'The Principality of New Antioch',
+                'slug' => 'principality-of-new-antioch',
+                'description' => 'Survivors of the old world who have adapted unique tactics for the new reality.',
+                'lore' => 'The remnants of ancient Antioch have evolved into something new, blending old traditions with harsh necessities of the eternal war.',
+                'primary_color' => '#2E8B57', // Sea Green
+                'secondary_color' => '#F5F5DC', // Beige
+                'icon' => 'shield',
+                'is_active' => true,
+                'sort_order' => 6,
+            ],
+        ];
+
+        foreach ($factions as $faction) {
+            DB::table('factions')->insert([
+                ...$faction,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
+        }
+    }
+}
