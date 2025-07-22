@@ -7,6 +7,7 @@ use App\Models\Faction;
 use App\Models\WarbandVariant;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Throwable;
 
 /**
  * Base abstract seeder class for Trench Crusade factions.
@@ -51,6 +52,8 @@ abstract class BaseFactionSeeder extends Seeder
      * This method orchestrates the seeding process by creating the faction,
      * its warband variants, and base units in the correct order within a
      * database transaction to ensure data integrity.
+     *
+     * @throws Throwable
      */
     public function run(): void
     {
