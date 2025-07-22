@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             FactionSeeder::class,
             WarbandVariantSeeder::class,
+            BaseUnitsSeeder::class,
         ]);
     }
 }

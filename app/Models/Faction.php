@@ -118,4 +118,21 @@ class Faction extends Model
             ->map(fn($value, $key) => "{$key}: {$value}")
             ->implode('; ');
     }
+
+    /**
+     * Get all base units for this faction
+     */
+    public function baseUnits(): HasMany
+    {
+        return $this->hasMany(BaseUnit::class);
+    }
+
+    /**
+     * Get all active base units for this faction
+     */
+    public function activeBaseUnits(): HasMany
+    {
+        return $this->baseUnits()->where('is_active', true);
+    }
+
 }
