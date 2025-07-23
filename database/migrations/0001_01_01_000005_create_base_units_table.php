@@ -21,6 +21,9 @@ return new class extends Migration
             // Faction relationship
             $table->foreignId('faction_id')->constrained()->onDelete('cascade');
 
+            // Warband variant relationship (nullable - unit may be available to all variants)
+            $table->foreignId('warband_variant_id')->nullable()->constrained()->onDelete('cascade');
+
             // Unit type and role
             $table->string('unit_type'); // e.g., 'trooper', 'elite', 'leader', 'specialist'
             $table->string('role')->nullable(); // e.g., 'assault', 'support', 'ranged', 'melee'
@@ -52,11 +55,13 @@ return new class extends Migration
 
             // Special rules and keywords
             $table->json('special_rules')->nullable(); // Unit-specific special rules
+            $table->json('keywords')->nullable(); // Unit keywords/tags for rules interactions
             $table->text('lore_text')->nullable(); // Background/flavor text
 
             // Availability flags
             $table->boolean('is_active')->default(true); // Is this unit currently available
             $table->string('source_book')->nullable(); // Which rulebook/expansion this is from
+            $table->json('variant_restrictions')->nullable(); // Warband variants this unit is restricted to
             $table->string('version')->default('1.0'); // Rules version
 
             $table->timestamps();
@@ -64,6 +69,7 @@ return new class extends Migration
             // Indexes for common queries
             $table->index(['faction_id', 'unit_type']);
             $table->index(['faction_id', 'is_active']);
+            $table->index(['warband_variant_id', 'is_active']);
             $table->index(['unit_type', 'is_active']);
             $table->index(['is_leader', 'is_active']);
             $table->index('base_cost');

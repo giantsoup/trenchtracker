@@ -18,6 +18,7 @@ class BaseUnit extends Model
         'slug',
         'description',
         'faction_id',
+        'warband_variant_id',
         'unit_type',
         'role',
         'movement',
@@ -38,9 +39,11 @@ class BaseUnit extends Model
         'equipment_options',
         'stat_advancement_options',
         'special_rules',
+        'keywords',
         'lore_text',
         'is_active',
         'source_book',
+        'variant_restrictions',
         'version',
     ];
 
@@ -68,6 +71,8 @@ class BaseUnit extends Model
         'equipment_options' => 'array',
         'stat_advancement_options' => 'array',
         'special_rules' => 'array',
+        'keywords' => 'array',
+        'variant_restrictions' => 'array',
         'is_active' => 'boolean',
     ];
 
@@ -85,6 +90,14 @@ class BaseUnit extends Model
     public function faction(): BelongsTo
     {
         return $this->belongsTo(Faction::class);
+    }
+
+    /**
+     * Get the warband variant this unit belongs to (if any).
+     */
+    public function warbandVariant(): BelongsTo
+    {
+        return $this->belongsTo(WarbandVariant::class);
     }
 
     /**
@@ -109,6 +122,22 @@ class BaseUnit extends Model
     public function scopeForFaction($query, int $factionId)
     {
         return $query->where('faction_id', $factionId);
+    }
+
+    /**
+     * Scope a query to filter by warband variant.
+     */
+    public function scopeForWarbandVariant($query, int $warbandVariantId)
+    {
+        return $query->where('warband_variant_id', $warbandVariantId);
+    }
+
+    /**
+     * Scope a query to only include units available to all variants (no specific variant restriction).
+     */
+    public function scopeAvailableToAllVariants($query)
+    {
+        return $query->whereNull('warband_variant_id');
     }
 
     /**
