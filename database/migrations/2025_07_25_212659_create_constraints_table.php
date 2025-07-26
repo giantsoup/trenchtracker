@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('constraint_types', function (Blueprint $table) {
+        Schema::create('constraints', function (Blueprint $table) {
             $table->id();
-            $table->string('name'); // "unit_keyword", "warband_limit", "unit_exclusion"
-            $table->enum('scope', ['unit_type', 'keyword', 'faction', 'warband_size', 'equipment_exclusion']);
-            $table->text('description');
+            $table->morphs('constrainable'); // What the constraint applies to
+            $table->foreignId('constraint_type_id')->constrained()->cascadeOnDelete();
+            $table->json('parameters'); // Flexible constraint parameters
             $table->timestamps();
         });
     }
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('constraint_types');
+        Schema::dropIfExists('constraints');
     }
 };

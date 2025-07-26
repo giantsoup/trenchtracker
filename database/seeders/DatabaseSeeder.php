@@ -17,6 +17,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        // Run rules system seeders first (required for other seeders)
+        $this->call([
+            RulePhaseSeeder::class,
+            RuleVersionSeeder::class,
+            RuleSeeder::class,
+            KeywordSeeder::class,
+            ConstraintTypeSeeder::class,
+            // EquipmentSeeder::class, // Skipped as requested
+        ]);
+
         // Run individual faction seeders
         $this->call([
             TrenchPilgrimsSeeder::class,
